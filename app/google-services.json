@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "288870553996",
+    "firebase_url": "https://realtimeautoambulance.firebaseio.com",
+    "project_id": "realtimeautoambulance",
+    "storage_bucket": "realtimeautoambulance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288870553996:android:6676e7d2291032f1969ea9",
+        "android_client_info": {
+          "package_name": "com.das.realtimeautoambulance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288870553996-pgjj006ikeaphnurqff4ud5qap85u90u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.das.realtimeautoambulance",
+            "certificate_hash": "4c797832a4324c661c12525bb599520b9b5fd9c4"
+          }
+        },
+        {
+          "client_id": "288870553996-msig38pobiihsg4kp1l9582g1ve64fq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZmKVvKkZQFhN5WRpXfdb_hhCJEAXV3TM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288870553996-msig38pobiihsg4kp1l9582g1ve64fq4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

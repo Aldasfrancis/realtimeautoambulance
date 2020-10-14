@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="#68AFE8"
+        app:layout_constraintBottom_toTopOf="@+id/personIcon"
+        app:layout_constraintEnd_toStartOf="@+id/Profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_foreground" />
+
+    <TextView
+        android:id="@+id/Profile"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="#68AFE8"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/personIcon"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/phoneIcon"
+        app:layout_constraintEnd_toStartOf="@+id/names"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton"
+        app:srcCompat="@drawable/ic_person2_foreground" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/MobilePhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/names"
+        app:layout_constraintTop_toBottomOf="@+id/Profile" />
+
+    <ImageButton
+        android:id="@+id/phoneIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/contactIcon"
+        app:layout_constraintEnd_toStartOf="@+id/phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personIcon"
+        app:srcCompat="@drawable/ic_phone_foreground" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:gravity="center"
+        android:text="Phone"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/contactIcon"
+        app:layout_constraintEnd_toStartOf="@+id/MobilePhone"
+        app:layout_constraintStart_toEndOf="@+id/phoneIcon"
+        app:layout_constraintTop_toBottomOf="@+id/names" />
+
+    <EditText
+        android:id="@+id/MobilePhone"
+        android:layout_width="0dp"
+        android:layout_height="60sp"
+        android:ems="10"
+        android:hint="Enter Your Phone"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phone" />
+
+    <ImageButton
+        android:id="@+id/contactIcon"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/mobileIcon"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneIcon"
+        app:srcCompat="@drawable/ic_contact_foreground" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="70sp"
+        android:gravity="center_vertical"
+        android:text="Emergency Contact"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Emergency1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contactIcon"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <ImageButton
+        android:id="@+id/mobileIcon"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/mobileIcon1"
+        app:layout_constraintEnd_toStartOf="@+id/Emergency1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactIcon"
+        app:srcCompat="@drawable/ic_phone5_foreground" />
+
+    <EditText
+        android:id="@+id/Emergency1"
+        android:layout_width="0dp"
+        android:layout_height="60sp"
+        android:ems="10"
+        android:hint="Enter Emergency Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Emergency2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mobileIcon"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageButton
+        android:id="@+id/mobileIcon1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/carIcon"
+        app:layout_constraintEnd_toStartOf="@+id/Emergency2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileIcon"
+        app:srcCompat="@drawable/ic_phone5_foreground" />
+
+    <EditText
+        android:id="@+id/Emergency2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Enter Emergency Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/carIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mobileIcon1"
+        app:layout_constraintTop_toBottomOf="@+id/Emergency1" />
+
+    <ImageButton
+        android:id="@+id/carIcon"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton9"
+        app:layout_constraintEnd_toStartOf="@+id/vehicleDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileIcon1"
+        app:srcCompat="@drawable/ic_car_foreground" />
+
+    <TextView
+        android:id="@+id/vehicleDetails"
+        android:layout_width="0dp"
+        android:layout_height="70sp"
+        android:gravity="center_vertical"
+        android:text="Vehicle Details"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/VehicleNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/carIcon"
+        app:layout_constraintTop_toBottomOf="@+id/Emergency2" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/VehicleNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carIcon"
+        app:srcCompat="@drawable/ic_assi_foreground" />
+
+    <EditText
+        android:id="@+id/VehicleNumber"
+        android:layout_width="0dp"
+        android:layout_height="60sp"
+        android:ems="10"
+        android:hint="Enter Vehicle Number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton9"
+        app:layout_constraintTop_toBottomOf="@+id/vehicleDetails" />
+
+    <TextView
+        android:id="@+id/UpdateButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="#68AFE8"
+        android:gravity="center"
+        android:text="Update"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VehicleNumber" />
+
+    <TextView
+        android:id="@+id/names"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:gravity="center"
+        android:text="Name"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/phone"
+        app:layout_constraintEnd_toStartOf="@+id/Name"
+        app:layout_constraintStart_toEndOf="@+id/personIcon"
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
